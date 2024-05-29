@@ -1,7 +1,7 @@
 import './App.css';
 import NavBar from './components/NavBar.js';
 import TypeWriter from './components/Typewriter.js';
-
+import About from './components/About.js'
 function App() {
   return (
     <div className="App">
@@ -21,6 +21,7 @@ function App() {
           />
         </div>
       </header>
+        <About />
     </div>
   );
 }

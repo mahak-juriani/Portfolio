@@ -43,4 +43,3 @@ NavBar Components:
 Create array of strings
 using for loop display the string one by one
 use the transition effect as we used in underlining the components in the Nav Bar.
-

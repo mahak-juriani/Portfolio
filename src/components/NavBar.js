@@ -1,20 +1,20 @@
-import React from "react";
-import './NavBar.css';
-function NavBar(){
+import "./NavBar.css";
+import logo from '../logo.svg';
+function NavBar() {
     return (
-        <header className="header">
-            <nav>
-                <ul className="navbar">
-                    <li class="nav-item"><a href="">Home</a></li>
-                    <li class="nav-item"><a href="">About</a></li>
-                    <li class="nav-item"><a href="">Skills</a></li>
-                    <li class="nav-item"><a href="">Projects</a></li>
-                    <li class="nav-item"><a href="">Resume</a></li>
-                    <li class="nav-item"><a href="">Contact</a></li>
-                </ul>
-            </nav>
-        </header>
-    );
-};
+        <nav>
+            <img src={logo} className="App-logo" alt="logo" />
+            <ul className="navBar">
+                <li className="nav-item"><a href="">Home</a></li>
+                <li className="nav-item"><a href="">About</a></li>
+                <li className="nav-item"><a href="">Skills</a></li>
+                <li className="nav-item"><a href="">Education</a></li>
+                <li className="nav-item"><a href="">Project</a></li>
+                <li className="nav-item"><a href="">Resume</a></li>
+            </ul>
+        </nav>
+    )
+}
+
 
 export default NavBar;

@@ -1,26 +1,27 @@
-import NavBar from './components/NavBar.js';
 import './App.css';
-import logo from './logo.svg'
-import Typewriter from './components/Typewriter.js';
+import NavBar from './components/NavBar.js';
+import TypeWriter from './components/Typewriter.js';
+
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <NavBar />
-        <Typewriter 
-            text = {
-              ["Hello, welocme to the typing effect demo!",
-                "Enjoy exploring this cool effect.",
-                "This is an example of typing and deleting text."
-              ]
-            }
-            typingSpeed = {100}
-            deletingSpeed = {50}
-        />
+        <NavBar/>
+        <div className="static-container">
+          <h1 className="nameElement">Mahak Juriani</h1>
+          <TypeWriter
+            text={[
+              "Hello, I'm Mahak Juriani.",
+              "I'm a Software Developer.",
+              "This is my portfolio."
+            ]}
+            typingSpeed={100}
+            deletingSpeed={50}
+            duration={1000}
+          />
+        </div>
       </header>
     </div>
-
   );
 }
 
